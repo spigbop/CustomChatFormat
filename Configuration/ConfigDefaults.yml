@@ -1,0 +1,18 @@
+#  ____ ____ _____   A Rocket plugin by Xpoxy.
+# / ___/ ___|  ___|  https://github.com/spigbop/CustomChatFormat
+#| |  | |   | |_     Version 01.28.24.01
+#| |__| |___|  _|
+# \____\____|_|      Lines starting with # are comments!
+
+# Available Translations: 'en_US', 'en_UK', 'de_DE', 'fr_FR', 'tr_TR'
+localizations: en_us
+
+# some more configs
+
+server-messages:
+  enable-welcome-message: true
+  enable-joinleave-messages: true
+  enable-death-messages: true
+
+# Sends the CCF welcome message to console
+send-plugin-loaded-message-to-console: true

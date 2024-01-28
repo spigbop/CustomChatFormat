@@ -1,0 +1,56 @@
+#  ____ ____ _____   A Rocket plugin by Xpoxy.
+# / ___/ ___|  ___|  https://github.com/spigbop/CustomChatFormat
+#| |  | |   | |_     Version 01.28.24.01
+#| |__| |___|  _|
+# \____\____|_|      Lines starting with # are comments!
+
+# =====================
+#    FORMATTING INFO
+# =====================
+
+# 1. COLORS AND SIZES
+
+# For colors {c:[color]} and replace [color] with:
+#   Any hex value with # (like #ffffff for white)
+#   or any regular unity color:
+#   cyan, blue, yellow, green, gray, magenta ...
+# Then end your color statement with {/c}
+# Ex: {c:yellow}i am yellow text{/c}
+# You can also use the vanilla <color=[color]></color> prefix.
+
+# For sizes {s:[number]} and replace [number] with any font size number.
+# Then end your size statement with {/s}
+# Ex: {s:40}I AM BIG TEXT{/s}
+# You can also use the vanilla <size=[number]></size> prefix.
+
+# 2. PLACEHOLDERS
+
+# List of available placeholders (for all server messages):
+# {player}: returns the player name.
+# {player.display}: returns the player display name (including prefixes and colors).
+# {server}: returns the server name in the server list menu.
+# {server.online}: returns the total of online players in the server.
+
+Server Messages:
+
+  Enable Welcome Message: true
+  Welcome Message:
+    "{s:20}{c:yellow}Welcome to the server!{/c}{/s}",
+    "{c:yellow}Type /help for a list of commands.{/c}"
+  
+  Enable Player Joined Message: true
+  Player Joined Message:
+    "{c:gray}▼ {player} has joined.{/c}"
+    
+  Enable Player First Joined Message: true
+  Player First Joined Message:
+    "{c:gray}▼ {player} has joined. (this is their first join!){/c}"
+    
+  Enable Player Left Message: true
+  Player Left Message:
+    "{c:gray}▲ {player} has left.{/c}"
+
+Player Chat Messages:
+  Chat Format: "{player.prefix}{player.namecolor}{player}{/c}{player.suffix}{c:gray}:{/c} {player.chatcolor}{message}"
+  Private Message Format (To): "{c:gray}[to: {target}]{/c} {message}"
+  Private Message Format (From): "{c:gray}[from: {target}]{/c} {message}"
